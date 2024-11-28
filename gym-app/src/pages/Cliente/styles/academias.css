@@ -1,0 +1,116 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: calc(100% - 50px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+.filter-select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.academia-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.academia-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.academia-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detalhes-btn, .action-btn {
+  background: #4e1d8d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.detalhes-btn:hover, .action-btn:hover {
+  background: #4e1d8d;
+}
+
+.detalhes {
+  margin-top: 10px;
+}
+
+.contact-form, .rating-form {
+  margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea, .rating-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.rating-star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.rating-star.active {
+  color: #FFD700;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}

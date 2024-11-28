@@ -1,0 +1,298 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .homepage-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .anuncios-grid,
+  .planos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-nav h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+}
+
+.homepage-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.sobre-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sobre-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: #4e1d8d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anuncio-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.anuncio-card .icone {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.homepage-header {
+  background-color: #4e1d8d;
+  color: #fff;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.homepage-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.homepage-nav h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.homepage-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.homepage-nav ul li {
+  margin-left: 2.5rem;
+}
+
+.homepage-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.homepage-nav ul li a:hover {
+  color: #b388ff;
+  transform: scale(1.1);
+}
+
+.hero-section {
+  background-image: url('https://i.ibb.co/RCHRs3b/gym-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  height: 60vh;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 20, 140, 0.8);
+  z-index: 0;
+}
+
+.hero-section h2,
+.hero-section p,
+.cta-button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h2 {
+  margin: 0;
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: #7c4dff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5e35b1;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.anuncios-section,
+.planos-section,
+.sobre-section,
+.contato-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.anuncios-section h2,
+.planos-section h2,
+.sobre-section h2,
+.contato-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: #4e1d8d;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.anuncios-grid,
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.anuncio-card,
+.plano-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.anuncio-card:hover,
+.plano-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.anuncio-card img,
+.plano-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.anuncio-card img:hover,
+.plano-card img:hover {
+  transform: scale(1.05);
+}
+
+.plano-card p {
+  font-size: 1.2rem;
+  margin: 0.75rem 0;
+}
+
+.homepage-footer {
+  background-color: #4e1d8d;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section h2,
+.hero-section p,
+.homepage-nav ul li a {
+  color: #fff;
+}
+
+.anuncios-section h2,
+.sobre-section h2,
+.contato-section h2 {
+  color: #4e1d8d;
+}
+
+.anuncio-card,
+.plano-card {
+  color: #333;
+}
